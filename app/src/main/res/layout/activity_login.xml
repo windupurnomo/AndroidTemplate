@@ -37,7 +37,7 @@
             android:password="true"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
         <Button
-            android:id="@+id/btnSingIn"
+            android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"

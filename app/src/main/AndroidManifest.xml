@@ -6,20 +6,36 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/CustomActionBarTheme" >
         <activity
             android:name="com.windupurnomo.kambingindonesia.activities.Splash"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name="com.windupurnomo.kambingindonesia.activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name="com.windupurnomo.kambingindonesia.activities.Login"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.windupurnomo.kambingindonesia.activities.MainMenu"
+            android:label="@string/title_activity_main_menu">
+        </activity>
+        <activity
+            android:name="com.windupurnomo.kambingindonesia.activities.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.windupurnomo.kambingindonesia.activities.MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.windupurnomo.kambingindonesia.activities.MainMenu" />
         </activity>
     </application>
 
